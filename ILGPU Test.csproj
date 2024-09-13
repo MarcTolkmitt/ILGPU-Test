@@ -1,0 +1,22 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net7.0-windows</TargetFramework>
+    <RootNamespace>ILGPU_Test</RootNamespace>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+    <StartupObject>ILGPU_Test.App</StartupObject>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ILGPU" Version="1.4.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Reference Include="MatrixFFN">
+      <HintPath>..\Projektmappe_Klassenbibliotheken\MatrixFFN\bin\Debug\net7.0-windows\MatrixFFN.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
+</Project>

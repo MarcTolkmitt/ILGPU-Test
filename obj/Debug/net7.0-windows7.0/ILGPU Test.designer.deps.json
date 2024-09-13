@@ -1,0 +1,28 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "ILGPU/1.4.0": {
+        "runtime": {
+          "lib/net7.0/ILGPU.dll": {
+            "assemblyVersion": "1.4.0.0",
+            "fileVersion": "1.4.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ILGPU/1.4.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-oNmmBhf2FsOOaevBTCLCkc48WJtv+LOsBNvtwkuW3k+PpEkALuS3F333ayNSl6lXeaj19bSrbPEgQO5Sq97tDQ==",
+      "path": "ilgpu/1.4.0",
+      "hashPath": "ilgpu.1.4.0.nupkg.sha512"
+    }
+  }
+}

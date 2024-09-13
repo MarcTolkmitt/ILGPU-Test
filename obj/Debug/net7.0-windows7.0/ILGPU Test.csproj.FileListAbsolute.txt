@@ -1,0 +1,5 @@
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\obj\Debug\net7.0-windows7.0\ILGPU Test.csproj.AssemblyReference.cache
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\obj\Debug\net7.0-windows7.0\MainWindow.g.cs
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\obj\Debug\net7.0-windows7.0\App.g.cs
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\obj\Debug\net7.0-windows7.0\ILGPU Test_MarkupCompile.cache
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\obj\Debug\net7.0-windows7.0\ILGPU Test_MarkupCompile.lref

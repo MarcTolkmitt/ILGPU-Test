@@ -1,0 +1,27 @@
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\obj\Debug\net7.0-windows10.0.22621.0\ILGPU Test.csproj.AssemblyReference.cache
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\obj\Debug\net7.0-windows10.0.22621.0\MainWindow.g.cs
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\obj\Debug\net7.0-windows10.0.22621.0\App.g.cs
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\obj\Debug\net7.0-windows10.0.22621.0\ILGPU Test_MarkupCompile.cache
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\obj\Debug\net7.0-windows10.0.22621.0\ILGPU Test_MarkupCompile.lref
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\bin\Debug\net7.0-windows10.0.22621.0\ILGPU Test.exe
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\bin\Debug\net7.0-windows10.0.22621.0\ILGPU Test.deps.json
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\bin\Debug\net7.0-windows10.0.22621.0\ILGPU Test.runtimeconfig.json
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\bin\Debug\net7.0-windows10.0.22621.0\ILGPU Test.dll
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\bin\Debug\net7.0-windows10.0.22621.0\ILGPU Test.pdb
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\bin\Debug\net7.0-windows10.0.22621.0\ILGPU.dll
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\bin\Debug\net7.0-windows10.0.22621.0\Microsoft.Windows.SDK.NET.dll
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\bin\Debug\net7.0-windows10.0.22621.0\WinRT.Runtime.dll
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\bin\Debug\net7.0-windows10.0.22621.0\MatrixFFN.dll
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\bin\Debug\net7.0-windows10.0.22621.0\MatrixFFN.pdb
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\obj\Debug\net7.0-windows10.0.22621.0\MainWindow.baml
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\obj\Debug\net7.0-windows10.0.22621.0\ILGPU Test.g.resources
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\obj\Debug\net7.0-windows10.0.22621.0\ILGPU Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\obj\Debug\net7.0-windows10.0.22621.0\ILGPU Test.AssemblyInfoInputs.cache
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\obj\Debug\net7.0-windows10.0.22621.0\ILGPU Test.AssemblyInfo.cs
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\obj\Debug\net7.0-windows10.0.22621.0\ILGPU Test.csproj.CoreCompileInputs.cache
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\obj\Debug\net7.0-windows10.0.22621.0\ILGPU Test.csproj.CopyComplete
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\obj\Debug\net7.0-windows10.0.22621.0\ILGPU Test.dll
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\obj\Debug\net7.0-windows10.0.22621.0\refint\ILGPU Test.dll
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\obj\Debug\net7.0-windows10.0.22621.0\ILGPU Test.pdb
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\obj\Debug\net7.0-windows10.0.22621.0\ILGPU Test.genruntimeconfig.cache
+C:\Users\marct\OneDrive\Desktop\C# Dateien\ILGPU Test\obj\Debug\net7.0-windows10.0.22621.0\ref\ILGPU Test.dll
