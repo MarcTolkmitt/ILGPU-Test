@@ -4,16 +4,16 @@
 winexe
 C#
 .cs
-C:\Users\Marc Tolkmitt\OneDrive\Desktop\C# Dateien\ILGPU Test\obj\Debug\net7.0-windows\
+C:\Users\Marc Tolkmitt\OneDrive\Desktop\C# Dateien\ILGPU Test\obj\Debug\net8.0-windows\
 ILGPU_Test
 none
 false
-TRACE;DEBUG;NET;NET7_0;NETCOREAPP
+TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Marc Tolkmitt\OneDrive\Desktop\C# Dateien\ILGPU Test\App.xaml
 11407045341
 
-51519037515
-200716502224
+5-153256840
+200733821189
 MainWindow.xaml;
 
 True

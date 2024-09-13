@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFramework>net7.0-windows</TargetFramework>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <RootNamespace>ILGPU_Test</RootNamespace>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>

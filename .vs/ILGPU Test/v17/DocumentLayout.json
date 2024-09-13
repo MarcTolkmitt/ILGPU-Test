@@ -1,13 +1,21 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\marct\\OneDrive\\Desktop\\C# Dateien\\ILGPU Test\\",
+  "WorkspaceRootPath": "C:\\Users\\Marc Tolkmitt\\OneDrive\\Desktop\\C# Dateien\\ILGPU Test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{14E1CDDF-5B82-44C0-8959-F014E52700BE}|ILGPU Test.csproj|c:\\users\\marct\\onedrive\\desktop\\c# dateien\\ilgpu test\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{14E1CDDF-5B82-44C0-8959-F014E52700BE}|ILGPU Test.csproj|c:\\users\\marc tolkmitt\\onedrive\\desktop\\c# dateien\\ilgpu test\\ilgpu test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{14E1CDDF-5B82-44C0-8959-F014E52700BE}|ILGPU Test.csproj|solutionrelative:ilgpu test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14E1CDDF-5B82-44C0-8959-F014E52700BE}|ILGPU Test.csproj|c:\\users\\marc tolkmitt\\onedrive\\desktop\\c# dateien\\ilgpu test\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{14E1CDDF-5B82-44C0-8959-F014E52700BE}|ILGPU Test.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14E1CDDF-5B82-44C0-8959-F014E52700BE}|ILGPU Test.csproj|c:\\users\\marct\\onedrive\\desktop\\c# dateien\\ilgpu test\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "AbsoluteMoniker": "D:0:0:{14E1CDDF-5B82-44C0-8959-F014E52700BE}|ILGPU Test.csproj|c:\\users\\marc tolkmitt\\onedrive\\desktop\\c# dateien\\ilgpu test\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{14E1CDDF-5B82-44C0-8959-F014E52700BE}|ILGPU Test.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{14E1CDDF-5B82-44C0-8959-F014E52700BE}|ILGPU Test.csproj|c:\\users\\marc tolkmitt\\onedrive\\desktop\\c# dateien\\ilgpu test\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{14E1CDDF-5B82-44C0-8959-F014E52700BE}|ILGPU Test.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     }
   ],
@@ -18,11 +26,33 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 0,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ILGPU Test",
+              "DocumentMoniker": "C:\\Users\\Marc Tolkmitt\\OneDrive\\Desktop\\C# Dateien\\ILGPU Test\\ILGPU Test.csproj",
+              "RelativeDocumentMoniker": "ILGPU Test.csproj",
+              "ToolTip": "C:\\Users\\Marc Tolkmitt\\OneDrive\\Desktop\\C# Dateien\\ILGPU Test\\ILGPU Test.csproj",
+              "RelativeToolTip": "ILGPU Test.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-09-13T08:16:00.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\Marc Tolkmitt\\OneDrive\\Desktop\\C# Dateien\\ILGPU Test\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\Marc Tolkmitt\\OneDrive\\Desktop\\C# Dateien\\ILGPU Test\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2024-09-13T08:14:33.071Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -42,24 +72,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "MainWindow.xaml.cs",
-              "DocumentMoniker": "C:\\Users\\marct\\OneDrive\\Desktop\\C# Dateien\\ILGPU Test\\MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\Marc Tolkmitt\\OneDrive\\Desktop\\C# Dateien\\ILGPU Test\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
-              "ToolTip": "C:\\Users\\marct\\OneDrive\\Desktop\\C# Dateien\\ILGPU Test\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\Marc Tolkmitt\\OneDrive\\Desktop\\C# Dateien\\ILGPU Test\\MainWindow.xaml.cs",
               "RelativeToolTip": "MainWindow.xaml.cs",
-              "ViewState": "AQIAAC0BAAAAAAAAAAAswEABAAAhAAAA",
+              "ViewState": "AgIAAC0BAAAAAAAAAAAswDEBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-04-19T12:11:50.102Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
               "Title": "MainWindow.xaml",
-              "DocumentMoniker": "C:\\Users\\marct\\OneDrive\\Desktop\\C# Dateien\\ILGPU Test\\MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\Marc Tolkmitt\\OneDrive\\Desktop\\C# Dateien\\ILGPU Test\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",
-              "ToolTip": "C:\\Users\\marct\\OneDrive\\Desktop\\C# Dateien\\ILGPU Test\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\Marc Tolkmitt\\OneDrive\\Desktop\\C# Dateien\\ILGPU Test\\MainWindow.xaml",
               "RelativeToolTip": "MainWindow.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
               "WhenOpened": "2024-04-19T12:11:50.15Z"

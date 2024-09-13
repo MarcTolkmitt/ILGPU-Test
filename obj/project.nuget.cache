@@ -1,14 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "tt2mT1KKkd2VJIEHsOxVNqyC8v+3sfFuYkfkXyyp4DuMr6FkeuO+YTG3k6bugw24JXjo0gJdkgfBkdVfIzKWng==",
+  "dgSpecHash": "3Nw77ecNzEc=",
   "success": true,
-  "projectFilePath": "C:\\Users\\marct\\OneDrive\\Desktop\\C# Dateien\\ILGPU Test\\ILGPU Test.csproj",
+  "projectFilePath": "C:\\Users\\Marc Tolkmitt\\OneDrive\\Desktop\\C# Dateien\\ILGPU Test\\ILGPU Test.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\marct\\.nuget\\packages\\ilgpu\\1.4.0\\ilgpu.1.4.0.nupkg.sha512",
-    "C:\\Users\\marct\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\7.0.16\\microsoft.windowsdesktop.app.ref.7.0.16.nupkg.sha512",
-    "C:\\Users\\marct\\.nuget\\packages\\microsoft.netcore.app.ref\\7.0.16\\microsoft.netcore.app.ref.7.0.16.nupkg.sha512",
-    "C:\\Users\\marct\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\7.0.16\\microsoft.aspnetcore.app.ref.7.0.16.nupkg.sha512",
-    "C:\\Users\\marct\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\7.0.16\\microsoft.netcore.app.host.win-x64.7.0.16.nupkg.sha512"
+    "C:\\Users\\Marc Tolkmitt\\.nuget\\packages\\ilgpu\\1.4.0\\ilgpu.1.4.0.nupkg.sha512"
   ],
   "logs": []
 }
