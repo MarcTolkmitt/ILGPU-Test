@@ -7,7 +7,7 @@ My longtime interest in artificial neural networks is there from the 90s when i 
 
 With C# life is better and you will see that it is possible to even approximate the **parabel**.
 
-This demo program will show you the <u>MatrixFFN-DLL</u>. It includes a feed forward network "<u>FFN</u>" and its own window where you can train a network, input its n-hidden layers and see the results.
+This demo program will show you the <u>**MatrixFFN**-DLL</u>. It includes a feed forward network "<u>**FFN**</u>" and its own window where you can train a network, input its n-hidden layers and see the results.
 
-ILGPU is a big promise for C# and the *FFN* is there as *FFN_ILGPU*. Feel free to compare the power of both networks with the **parabel** or any data you like.
+ILGPU is a big promise for C# and the *<u>**FFN**</u>* is there as *<u>**FFN_ILGPU**</u>*. Feel free to compare the power of both networks with the **parabel** or any data you like.
 
