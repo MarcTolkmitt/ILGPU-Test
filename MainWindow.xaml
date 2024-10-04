@@ -7,31 +7,49 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="1000" Width="800" Left="0" Top="0" Closing="Window_Closing">
     <DockPanel LastChildFill="False" HorizontalAlignment="Stretch" Height="NaN" Margin="0,0,0,0" VerticalAlignment="Stretch" Width="NaN">
-        <Menu x:Name="hauptMenu" Width="800" DockPanel.Dock="Top" Height="20">
-            <MenuItem Header="_Datei">
-                <MenuItem Header="_Quit" Click="MenuQuit_Click"/>
+        <Menu x:Name="_MainMenu" Width="800" DockPanel.Dock="Top" Height="20">
+            <MenuItem Header="File">
+                <MenuItem Header="Quit" Click="_MenuQuit_Click"/>
             </MenuItem>
-            <MenuItem x:Name="MenuTestdaten" Header="_Testdaten Parabel" Click="MenuTest_Click"/>
-            <MenuItem Header="_FFN">
-                <MenuItem x:Name="MenuFFNladen" Header="Laden" Click="FFNladen_Click"/>
-                <MenuItem x:Name="MenuFFNladenVon" Header="Laden von ..." Click="MenuFFNladenVon_Click"/>
+            <MenuItem x:Name="_MenuTestData" Header="Test data parable" 
+                      Click="_MenuTest_Click"/>
+            <MenuItem Header="FFN">
+                <MenuItem x:Name="_MenuFFNload" Header="Load" Click="_FFNload_Click"/>
+                <MenuItem x:Name="_MenuFFNloadOf" Header="Load of ..." 
+                        Click="_MenuFFNloadOf_Click"/>
                 <Separator/>
-                <MenuItem x:Name="MenuFFNspeichern" Header="Speichern" Click="FFNspeichern_Click" />
-                <MenuItem x:Name="MenuFFNspeichernAls" Header="Speichern als ..." Click="MenuFFNspeichernAls_Click"/>
+                <MenuItem x:Name="_MenuFFNsave" Header="Save" Click="_FFNsave_Click" />
+                <MenuItem x:Name="_MenuFFNsaveAs" Header="Save as..." 
+                          Click="_MenuFFNsaveAs_Click"/>
                 <Separator/>
-                <MenuItem x:Name="MenuFFNinit" Header="Init" Click="FFNinit_Click"/>
-                <MenuItem x:Name="MenuFFNtrain" Header="Train 1 Epoche" Click="FFNtrain_1_Click"/>
-                <MenuItem x:Name="MenuFFNtrain10" Header="Train 10 Epochen" Click="FFNtrain_10_Click"/>
-                <MenuItem x:Name="MenuFFNtrain100" Header="Train 10_000 Epochen" Click="FFNtrain_100_Click" AutomationProperties.AcceleratorKey="m"/>
-                <MenuItem x:Name="MenuFFNpredict" Header="Predict" Click="FFNpredict_Click"/>
-                <MenuItem x:Name="MenuFFNlernrate" Header="Lernrate 0.1" Click="FFNlernrate_Click" />
-                <MenuItem x:Name="MenuFFNlernschleife" Header="kontinuierliches Lernen" Click="FFNlernschleife_Click" />
+                <MenuItem x:Name="_MenuFFNinit" Header="Initialize the network" 
+                          Click="_FFNinit_Click"/>
+                <MenuItem x:Name="_MenuFFNtrain" Header="Train 1 Epochs" 
+                          Click="_FFNtrain_1_Click"/>
+                <MenuItem x:Name="_MenuFFNtrain10" Header="Train 10 Epochs" 
+                          Click="_FFNtrain_10_Click"/>
+                <MenuItem x:Name="_MenuFFNtrain100" Header="Train 100 Epochs" 
+                          Click="_FFNtrain_100_Click" />
+                <MenuItem x:Name="_MenuFFNtrain1000" Header="Train 1000 Epochs" 
+                          Click="_FFNtrain_1000_Click" />
+                <MenuItem x:Name="_MenuFFNtrain10000" Header="Train 10_000 Epochs" 
+                          Click="_FFNtrain_10000_Click" />
+                <MenuItem x:Name="_MenuFFNpredict" Header="Predict" 
+                          Click="_FFNpredict_Click"/>
+                <MenuItem x:Name="_MenuFFNlearnrate" Header="Learn rate 0.1" 
+                          Click="_FFNlearnrate_Click" />
+                <MenuItem x:Name="_MenuFFNlearnLoop" Header="continual learning" 
+                          Click="_FFNlearnLoop_Click" />
                 <Separator/>
-                <MenuItem x:Name="MenuFFNFenster" Header="starte das FFN-Fenster" Click="FFNfensterStart"/>
+                <MenuItem x:Name="_MenuFFNwindow" Header="start the FFN window" 
+                          Click="_FFNwindowStart"/>
             </MenuItem>
         </Menu>
-        <ScrollViewer x:Name="textScroll" VerticalScrollBarVisibility="Visible" HorizontalScrollBarVisibility="Auto" DockPanel.Dock="Top" Margin="10">
-            <TextBlock x:Name="textBlock" TextWrapping="Wrap" HorizontalAlignment="Left" Margin="10"/>
+        <ScrollViewer x:Name="_TextScroll" VerticalScrollBarVisibility="Visible" 
+                      HorizontalScrollBarVisibility="Auto" DockPanel.Dock="Top" 
+                      Margin="10">
+            <TextBlock x:Name="_TextBlock" TextWrapping="Wrap" HorizontalAlignment="Left" 
+                       Margin="10"/>
 
         </ScrollViewer>
 

@@ -11,7 +11,7 @@ This demo program will show you the <u>**MatrixFFN**-DLL</u>. It includes a feed
 
 ILGPU is a big promise for C# and the *<u>**FFN**</u>* is there as *<u>**FFN_ILGPU**</u>*. Feel free to compare the power of both networks with the **parabel** or any data you like.
 
-## 2.background information
+## 2.background information to the MatrixFFN
 
 Having tried for many years to implement a working network gave me much practice in programming Java and C++. I stumbled over C# and just had to start Microsoft Learn lessons.
 

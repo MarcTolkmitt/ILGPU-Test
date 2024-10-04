@@ -1,10 +1,14 @@
-﻿using ILGPU;
+﻿// Ignore Spelling: ILGPU
+
+using ILGPU;
 using ILGPU.Runtime;
 using System;
 using System.IO;
 using System.Windows;
 using MatrixFFN;
 using System.Threading;
+using NPOI.HPSF;
+using Array = System.Array;
 
 namespace ILGPU_Test
 {
@@ -13,334 +17,210 @@ namespace ILGPU_Test
     /// </summary>
     public partial class MainWindow : Window
     {
+        /// <summary>
+        /// created on: 04.07.2023
+        /// last edit: 04.10.24
+        /// </summary>
+        public Version version = new Version("1.0.6");
 
         int nummer = 0;
-        public double[ ][ ]? eingabeArray;
-        public double[ ][ ]? ausgabeArray;
-        public FFN? netz;
-        //bool weiter = false;
-        public FFN_Window netzFenter = new FFN_Window();
+        public double[ ][ ] inputArray = new double[1][];
+        public double[ ][ ] outputArray = new double[1][];
+        public FFN network = new FFN( new int[] { 1, 2, 1 }, true );
+        public FFN_Window networkWindow = new FFN_Window();
 
         /// <summary>
-        /// Hilfsfunktion, die die Parabeltestdaten
-        /// generiert.
+        /// Constructor of the class
         /// </summary>
-        public void SetzeTestDaten( )
+        public MainWindow( )
         {
-            eingabeArray = new double[ 21 ][ ];
-            ausgabeArray = new double[ 21 ][ ];
+            InitializeComponent();
+            Test1();
+
+        }   // end: MainWindow ( Constructor )
+
+        /// <summary>
+        /// Helper function to create the raw parable test data.
+        /// </summary>
+        public void CreateTestData( )
+        {
+            inputArray = new double[ 21 ][ ];
+            outputArray = new double[ 21 ][ ];
             for ( int pos = 0; pos < 21; pos++ )
             {
-                eingabeArray[ pos ] = new double[ 2 ]
+                inputArray[ pos ] = new double[ 2 ]
                     { ( pos - 10 ), ( pos - 10 ) };
-                ausgabeArray[ ( int ) pos ] = new double[ 1 ]
+                outputArray[ ( int ) pos ] = new double[ 1 ]
                     { ( Math.Pow( pos - 10, 2 ) ) };
             }
             
-            Anzeige( ArrayToString( eingabeArray) );
-            Anzeige( ArrayToString( ausgabeArray) );
+            DisplayText( ArrayToString( inputArray) );
+            DisplayText( ArrayToString( outputArray) );
 
 
-        }   // Ende: SetzeTestDaten
+        }   // end: CreateTestData
 
         /// <summary>
-        /// Hilfsfunktion, die die Datenfelder in einen String schreibt.
+        /// Helper function for writing ragged arrays into a string.
         /// </summary>
         /// <param name="data"></param>
-        /// <returns>Die Daten als String</returns>
-        public string ArrayToString( double[ ][ ] data, bool umbruch = false )
+        /// <returns>the data as 'string'</returns>
+        public string ArrayToString( double[ ][ ] data, bool lineBreak = false )
         {
             string text = "";
                 
             foreach ( double[ ] dat in data )
             {
                 text += $" [ {string.Join( ", ", dat ) } ] ";
-                if ( umbruch )
+                if ( lineBreak )
                     text += "\n";
 
             }
             text += "\n";
             return( text );
 
-        }   // Ende: ArrayToString
+        }   // end: ArrayToString
 
         /// <summary>
-        /// Konstruktor der Klasse
+        /// Helper function to write the given text
+        /// into the text output - here a part of the
+        /// main window.
         /// </summary>
-        public MainWindow()
-        {
-            InitializeComponent();
-            Test1();
-
-        }   // Ende: MainWindow ( Konstruktor )
-
-        /// <summary>
-        /// Handlerfunktion -> MenuItem
-        /// </summary>
-        /// <param name="sender">auslösendes Oberflächenelement</param>
-        /// <param name="e">Übergabeparameter davon</param>
-        private void MenuTest_Click(object sender, RoutedEventArgs e)
-        {
-            nummer++;
-            textBlock.Text += nummer.ToString() + ": SetzeTestDaten().\n";
-            SetzeTestDaten();
-
-        }   // Ende: MenuTest_Click
-
-        /// <summary>
-        /// Hilfsfunktion, die den übergebenen Text in die 
-        /// Textausgabe schreibt.
-        /// </summary>
-        /// <param name="text">Eingabestring</param>
-        public void Anzeige( string? text )
+        /// <param name="text">input 'string'</param>
+        public void DisplayText( string text )
         { 
             if ( !string.IsNullOrEmpty( text ) )
-                textBlock.Text += text + "\n"; 
-            textScroll.ScrollToBottom();
+                _TextBlock.Text += text + "\n"; 
+            _TextScroll.ScrollToBottom();
 
-        }   // Ende: Anzeige
+        }   // end: DisplayText
 
         /// <summary>
-        /// Hilfsfunktion, die den übergebenen Text in die 
-        /// Textausgabe schreibt.
+        /// Helper function to write the given text
+        /// into the text output - here a part of the
+        /// main window.
         /// </summary>
-        /// <param name="text">Any-Objekt-Variante</param>
-        private void Anzeige( int obj )
+        /// <param name="text">any object variant</param>
+        private void DisplayText( int obj )
         {
-            Anzeige( obj.ToString( ) );
+            DisplayText( obj.ToString( ) );
 
-        }   // Ende: Anzeige
+        }   // end: DisplayText
 
         /// <summary>
-        /// Hilfsfunktion für ILGPU zur Ausgabe der
-        /// Systeminformationen.
+        /// Takes the info 'string' from ILGPU 
+        /// to show system information.
         /// </summary>
-        /// <param name="accelerator">ILGPU-Variable ( GPU bzw. Emulation )</param>
-        /// <returns>der Infostring</returns>
+        /// <param name="accelerator">ILGPU variable ( GPU or Emulation )</param>
+        /// <returns>the info 'string'</returns>
         public string GetInfoString( Accelerator accelerator ) 
         { 
             StringWriter stringWriter = new StringWriter();
             accelerator.PrintInformation( stringWriter );
             return( stringWriter.ToString() );
-        }   // Ende: GetInfoString
+        }   // end: GetInfoString
         
         /// <summary>
-        /// Gesammelte Werke aus dem ILGPU-Tutorial.
-        /// Eröffnen eines Context's und Ausgabe
-        /// aller Geräteinformationen.
+        /// First steps from the
+        /// ILGPU-Tutorial.
         /// </summary>
         public void Test1()
-        {   // erstes Tutorial etc. 
+        {   // fist Tutorial etc. 
             using Context context = Context.CreateDefault();
 
             foreach ( Device dev in context )
             {
                 Console.WriteLine( dev );
-                Anzeige( dev.ToString() );
+                DisplayText( dev.ToString() );
                 using Accelerator accelerator = dev.CreateAccelerator( context );
                 Console.WriteLine( accelerator );
-                Anzeige( accelerator.ToString() );
+                DisplayText( accelerator.ToString() );
                 Console.WriteLine( GetInfoString( accelerator ) );
-                Anzeige( GetInfoString( accelerator ) );
+                DisplayText( GetInfoString( accelerator ) );
             }
 
-        }   // Ende: Test1
+        }   // end: Test1
+
+        // --------------------------------------------------------------------
 
 
         /// <summary>
-        /// Handlerfunktion -> MenuItem
+        /// Handler function -> MenuItem
         /// </summary>
-        /// <param name="sender">auslösendes Oberflächenelement</param>
-        /// <param name="e">Übergabeparameter davon</param>
-        private void FFNladen_Click( object sender, RoutedEventArgs e )
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void _FFNwindowStart( object sender, RoutedEventArgs e )
         {
-            Anzeige( "FFNladen: " );
-            if ( netz == null )
-                netz = new FFN( new int [] { 1, 2, 1 }, true );
-            netz.LadeDaten( netz.dateiName );
+            networkWindow.Show();
+            networkWindow.Owner = this;
 
-
-        }   // Ende: FFNladen_Click
+        }   // end: _FFNwindowStart
 
         /// <summary>
-        /// Handlerfunktion -> MenuItem
-        /// </summary>
-        /// <param name="sender">auslösendes Oberflächenelement</param>
-        /// <param name="e">Übergabeparameter davon</param>
-        private void FFNspeichern_Click( object sender, RoutedEventArgs e )
-        {
-            Anzeige( "FFNspeichern" );
-            netz.SpeicherDaten( netz.dateiName );
-
-        }   // Ende: FFNspeichern_Click
-
-        /// <summary>
-        /// Handlerfunktion -> MenuItem
-        /// </summary>
-        /// <param name="sender">auslösendes Oberflächenelement</param>
-        /// <param name="e">Übergabeparameter davon</param>
-        private void FFNinit_Click( object sender, RoutedEventArgs e )
-        {
-            Anzeige( "FFNinit" );
-            int[] topic = new int[] { 2, 40, 20, 10, 1 };
-            netz = new FFN( topic, true );
-            Anzeige( netz.ToString() );
-            //Array.ForEach( )
-            //Anzeige( netz.schichtenTopic );
-            Array.ForEach( netz.schichtenTopic, Anzeige );
-            FFNtrain_1_Click( sender, e );
-
-        }   // Ende: FFNinit_Click
-
-        /// <summary>
-        /// Handlerfunktion -> MenuItem
-        /// </summary>
-        /// <param name="sender">auslösendes Oberflächenelement</param>
-        /// <param name="e">Übergabeparameter davon</param>
-        private void FFNtrain_1_Click( object sender, RoutedEventArgs e )
-        {
-            Anzeige( "Fit'te eine Epoche des Datensatzes..." );
-            string result = netz.Fit( eingabeArray, ausgabeArray, 1 );
-            Anzeige( result );
-            Anzeige( $"Dauer für eine Epoche: { netz.zeitFit }.\n" );
-            FFNpredict_Click( sender, e );
-
-        }   // Ende: FFNtrain_1_Click
-
-        /// <summary>
-        /// Handlerfunktion -> MenuItem
-        /// </summary>
-        /// <param name="sender">auslösendes Oberflächenelement</param>
-        /// <param name="e">Übergabeparameter davon</param>
-        private void FFNtrain_10_Click( object sender, RoutedEventArgs e )
-        {
-            Anzeige( "Fit'te 10 Epochen des Datensatzes..." );
-            string result = netz.Fit( eingabeArray, ausgabeArray, 10 );
-            Anzeige( result );
-            Anzeige( $"Dauer für eine Epoche: {netz.zeitFit}.\n" );
-            FFNpredict_Click( sender, e );
-
-        }   // Ende: FFNtrain_10_Click
-
-        /// <summary>
-        /// Handlerfunktion -> MenuItem
-        /// </summary>
-        /// <param name="sender">auslösendes Oberflächenelement</param>
-        /// <param name="e">Übergabeparameter davon</param>
-        private void FFNtrain_100_Click( object sender, RoutedEventArgs e )
-        {
-            Anzeige( "Fit'te 10_000 Epochen des Datensatzes..." );
-            string result = netz.Fit( eingabeArray, ausgabeArray, 10_000 );
-            Anzeige( result );
-            Anzeige( $"Dauer für 10_000 Epochen: {netz.zeitFit}.\n" );
-            FFNpredict_Click( sender, e );
-
-        }   // Ende: FFNtrain_100_Click
-
-        /// <summary>
-        /// Handlerfunktion -> MenuItem
-        /// </summary>
-        /// <param name="sender">auslösendes Oberflächenelement</param>
-        /// <param name="e">Übergabeparameter davon</param>
-        private void FFNpredict_Click( object sender, RoutedEventArgs e )
-        {
-            Anzeige( "Ergebnisse des Netzwerks sammeln..." );
-            var predictArray = new double[ 21 ][];
-            for ( int pos = 0; pos < 21; pos++ )
-            {
-                var ergebnis = netz.Predict( eingabeArray[ pos ] );
-                ergebnis[ 0 ] = Math.Round( ergebnis[ 0 ], 2 );
-                predictArray[ pos ] = ergebnis;
-
-            }
-
-            Anzeige( ArrayToString( eingabeArray ) );
-            Anzeige( ArrayToString( ausgabeArray ) );
-            Anzeige( ArrayToString( predictArray ) );
-
-        }   // Ende: FFNpredict_Click
-
-        /// <summary>
-        /// Handlerfunktion -> MenuItem
-        /// </summary>
-        /// <param name="sender">auslösendes Oberflächenelement</param>
-        /// <param name="e">Übergabeparameter davon</param>
-        private void FFNlernrate_Click( object sender, RoutedEventArgs e )
-        {
-            netz.SetzeLernRate( 0.1 );
-
-        }   // Ende: FFNlernrate_Click
-
-        /// <summary>
-        /// Handlerfunktion -> MenuItem
-        /// </summary>
-        /// <param name="sender">auslösendes Oberflächenelement</param>
-        /// <param name="e">Übergabeparameter davon</param>
-        private void FFNlernschleife_Click( object sender, RoutedEventArgs e )
-        {
-            for ( int count = 0; count < 1800; count++ )
-            {
-                Anzeige( "Fit'te 10_000 Epochen des Datensatzes..." );
-                string result = netz.Fit( eingabeArray, ausgabeArray, 10_000 );
-                Anzeige( result );
-                Anzeige( $"Dauer für 10_000 Epochen: {netz.zeitFit}.\n" );
-                Anzeige( "Ergebnisse des Netzwerks sammeln..." );
-                var predictArray = new double[ 21 ][];
-                for ( int pos = 0; pos < 21; pos++ )
-                {
-                    var ergebnis = netz.Predict( eingabeArray[ pos ] );
-                    ergebnis[ 0 ] = Math.Round( ergebnis[ 0 ], 2 );
-                    predictArray[ pos ] = ergebnis;
-
-                }
-
-                Anzeige( ArrayToString( eingabeArray ) );
-                Anzeige( ArrayToString( ausgabeArray ) );
-                Anzeige( ArrayToString( predictArray ) );
-                Thread.Sleep( 500 );
-
-            }   //
-
-        }   // Ende: FFNlernschleife_Click
-
-
-
-        /// <summary>
-        /// Handlerfunktion -> MenuItem
-        /// </summary>
-        /// <param name="sender">auslösendes Oberflächenelement</param>
-        /// <param name="e">Übergabeparameter davon</param>
-        private void FFNfensterStart( object sender, RoutedEventArgs e )
-        {
-            netzFenter.Show();
-            netzFenter.Owner = this;
-
-        }   // Ende: FFNfensterStart
-
-        /// <summary>
-        /// Aktionen zum Programmende wie z.Bsp.
-        /// die Unterfenster zu schließen...
+        /// Close the windows to programs end.
         /// </summary>
         /// <param name="sender"></param>
         /// <param name="e"></param>
         private void Window_Closing( object sender, System.ComponentModel.CancelEventArgs e )
         {
-            netzFenter.Close();
+            networkWindow.isNowToEnd = true;
+            networkWindow.Close();
 
-        }   // Ende: Window_Closing
+        }   // end: Window_Closing
 
         /// <summary>
-        /// Handlerfunktion -> MenuItem
+        /// Handler function -> MenuItem
         /// </summary>
-        /// <param name="sender">auslösendes Oberflächenelement</param>
-        /// <param name="e">Übergabeparameter davon</param>
-        private void MenuFFNladenVon_Click( object sender, RoutedEventArgs e )
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void _MenuQuit_Click( object sender, RoutedEventArgs e )
+        {
+            this.Close( );
+
+        }   // end: _MenuQuit_Click
+
+        // -------------------------------------------------      Events
+
+        /// <summary>
+        /// Handler function -> MenuItem
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void _MenuTest_Click( object sender, RoutedEventArgs e )
+        {
+            nummer++;
+            _TextBlock.Text += nummer.ToString() + ": CreateTestData().\n";
+            CreateTestData();
+
+        }   // end: _MenuTest_Click
+
+        /// <summary>
+        /// Handler function -> MenuItem
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void _FFNload_Click( object sender, RoutedEventArgs e )
+        {
+            DisplayText( "FFNladen: " );
+            if ( network == null )
+                network = new FFN( new int[] { 1, 2, 1 }, true );
+            network.LoadData( network.fileName );
+
+
+        }   // end: _FFNload_Click
+
+        /// <summary>
+        /// Handler function -> MenuItem
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void _MenuFFNloadOf_Click( object sender, RoutedEventArgs e )
         {
             // Configure open file dialog box
             var dialog = new Microsoft.Win32.OpenFileDialog();
             dialog.FileName = "FFN"; // Default file name
-            dialog.DefaultExt = ".netz"; // Default file extension
-            dialog.Filter = "Netzwerkspeicherdatei (.netz)|*.netz"; // Filter files by extension
+            dialog.DefaultExt = ".network"; // Default file extension
+            dialog.Filter = "network save file (.network)|*.network"; // Filter files by extension
 
             // Show open file dialog box
             bool? result = dialog.ShowDialog();
@@ -350,35 +230,38 @@ namespace ILGPU_Test
             {
                 // Open document
                 string filename = dialog.FileName;
-                Anzeige( $"Auswahl der Datei {filename}" );
+                network.fileName = filename;
+                network.LoadData( network.fileName );
+                DisplayText( $"the chosen file is {filename}" );
 
             }
 
-        }   // Ende: MenuFFNladenVon_Click
+        }   // end: _MenuFFNloadOf_Click
 
         /// <summary>
-        /// Handlerfunktion -> MenuItem
+        /// Handler function -> MenuItem
         /// </summary>
-        /// <param name="sender">auslösendes Oberflächenelement</param>
-        /// <param name="e">Übergabeparameter davon</param>
-        private void MenuQuit_Click( object sender, RoutedEventArgs e )
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void _FFNsave_Click( object sender, RoutedEventArgs e )
         {
-            this.Close( );
+            DisplayText( " saving FFN " );
+            network.SaveData( network.fileName );
 
-        }   // Ende: MenuQuit_Click
+        }   // end: _FFNsave_Click
 
         /// <summary>
-        /// Handlerfunktion -> MenuItem
+        /// Handler function -> MenuItem
         /// </summary>
-        /// <param name="sender">auslösendes Oberflächenelement</param>
-        /// <param name="e">Übergabeparameter davon</param>
-        private void MenuFFNspeichernAls_Click( object sender, RoutedEventArgs e )
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void _MenuFFNsaveAs_Click( object sender, RoutedEventArgs e )
         {
             // Configure save file dialog box
             var dialog = new Microsoft.Win32.SaveFileDialog();
             dialog.FileName = "FFN"; // Default file name
-            dialog.DefaultExt = ".netz"; // Default file extension
-            dialog.Filter = "Netzwerkspeicherdatei (.netz)|*.netz"; // Filter files by extension
+            dialog.DefaultExt = ".network"; // Default file extension
+            dialog.Filter = "network save file (.network)|*.network"; // Filter files by extension
 
             // Show save file dialog box
             bool? result = dialog.ShowDialog();
@@ -388,13 +271,173 @@ namespace ILGPU_Test
             {
                 // Save document
                 string filename = dialog.FileName;
-                Anzeige( $"Auswahl der Datei {filename}" );
+                network.fileName = filename;
+                network.SaveData( network.fileName );
+                DisplayText( $"the chosen file is {filename}" );
 
             }
 
-        }   // Ende: MenuFFNspeichernAls_Click
+        }   // end: _MenuFFNsaveAs_Click
 
-    }   // Ende: partial class MainWindow
+        /// <summary>
+        /// Handler function -> MenuItem
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void _FFNinit_Click( object sender, RoutedEventArgs e )
+        {
+            DisplayText( "initialize the 'FFN'" );
+            int[] topic = new int[] { 2, 40, 20, 10, 1 };
+            network = new FFN( topic, true );
+            DisplayText( network.ToString() );
+            //DisplayText( network.schichtenTopic );
+            Array.ForEach( network.layersTopic, DisplayText );
+            _FFNtrain_1_Click( sender, e );
 
-}   // Ende: namespace ILGPU_Test
+        }   // end: _FFNinit_Click
+
+        /// <summary>
+        /// Handler function -> MenuItem
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void _FFNtrain_1_Click( object sender, RoutedEventArgs e )
+        {
+            DisplayText( "calling 'Fit' for one epoch of the dataset..." );
+            string result = network.Fit( inputArray, outputArray, 1 );
+            DisplayText( result );
+            DisplayText( $"duration for the training: {network.timeFit}.\n" );
+            _FFNpredict_Click( sender, e );
+
+        }   // end: _FFNtrain_1_Click
+
+        /// <summary>
+        /// Handler function -> MenuItem
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void _FFNtrain_10_Click( object sender, RoutedEventArgs e )
+        {
+            DisplayText( "calling 'Fit' for 10 epochs of the dataset..." );
+            string result = network.Fit( inputArray, outputArray, 10 );
+            DisplayText( result );
+            DisplayText( $"duration for the training: {network.timeFit}.\n" );
+            _FFNpredict_Click( sender, e );
+
+        }   // end: _FFNtrain_10_Click
+
+        /// <summary>
+        /// Handler function -> MenuItem
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void _FFNtrain_100_Click( object sender, RoutedEventArgs e )
+        {
+            DisplayText( "calling 'Fit' for 100 epochs of the dataset..." );
+            string result = network.Fit( inputArray, outputArray, 100 );
+            DisplayText( result );
+            DisplayText( $"duration for the training: {network.timeFit}.\n" );
+            _FFNpredict_Click( sender, e );
+
+        }   // end: _FFNtrain_100_Click
+
+        /// <summary>
+        /// Handler function -> MenuItem
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void _FFNtrain_1000_Click( object sender, RoutedEventArgs e )
+        {
+            DisplayText( "calling 'Fit' for 100 epochs of the dataset..." );
+            string result = network.Fit( inputArray, outputArray, 1000 );
+            DisplayText( result );
+            DisplayText( $"duration for the training: {network.timeFit}.\n" );
+            _FFNpredict_Click( sender, e );
+
+        }   // end: _FFNtrain_1000_Click
+
+        /// <summary>
+        /// Handler function -> MenuItem
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void _FFNtrain_10000_Click( object sender, RoutedEventArgs e )
+        {
+            DisplayText( "calling 'Fit' for 100 epochs of the dataset..." );
+            string result = network.Fit( inputArray, outputArray, 10000 );
+            DisplayText( result );
+            DisplayText( $"duration for the training: {network.timeFit}.\n" );
+            _FFNpredict_Click( sender, e );
+
+        }   // end: _FFNtrain_1000_Click
+
+        /// <summary>
+        /// Handler function -> MenuItem
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void _FFNpredict_Click( object sender, RoutedEventArgs e )
+        {
+            DisplayText( "collecting the results of prediction..." );
+            var predictArray = new double[ 21 ][];
+            for ( int pos = 0; pos < 21; pos++ )
+            {
+                var result = network.Predict( inputArray[ pos ] );
+                result[ 0 ] = Math.Round( result[ 0 ], 2 );
+                predictArray[ pos ] = result;
+
+            }
+
+            DisplayText( ArrayToString( inputArray ) );
+            DisplayText( ArrayToString( outputArray ) );
+            DisplayText( ArrayToString( predictArray ) );
+
+        }   // end: _FFNpredict_Click
+
+        /// <summary>
+        /// Handler function -> MenuItem
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void _FFNlearnrate_Click( object sender, RoutedEventArgs e )
+        {
+            network.SetLearningRate( 0.1 );
+
+        }   // end: _FFNlearnrate_Click
+
+        /// <summary>
+        /// Handler function -> MenuItem
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void _FFNlearnLoop_Click( object sender, RoutedEventArgs e )
+        {
+            for ( int count = 0; count < 1800; count++ )
+            {
+                DisplayText( "calling Fit' for 10_000 epochs..." );
+                string result = network.Fit( inputArray, outputArray, 10_000 );
+                DisplayText( result );
+                DisplayText( $"duration for 10_000eEpochs: {network.timeFit}.\n" );
+                DisplayText( "results of 'Predict'..." );
+                var predictArray = new double[ 21 ][];
+                for ( int pos = 0; pos < 21; pos++ )
+                {
+                    double[] outputs = network.Predict( inputArray[ pos ] );
+                    outputs[ 0 ] = Math.Round( outputs[ 0 ], 2 );
+                    predictArray[ pos ] = outputs;
+
+                }
+
+                DisplayText( ArrayToString( inputArray ) );
+                DisplayText( ArrayToString( outputArray ) );
+                DisplayText( ArrayToString( predictArray ) );
+                Thread.Sleep( 500 );
+
+            }   //
+
+        }   // end: _FFNlearnLoop_Click
+
+    }   // end: partial class MainWindow
+
+}   // end: namespace ILGPU_Test
 
