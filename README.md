@@ -7,7 +7,7 @@ I am sorry for the inconvenience of seeing incomplete software. For that reason 
 
 Here a screenshot of the FFN_Window in action:
 
-![Screenshot 2024-10-05 153026](C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\Screenshot 2024-10-05 153026.png)
+![Screenshot 2024-10-05 153026](Screenshot 2024-10-05 153026.png)
 
 
 
