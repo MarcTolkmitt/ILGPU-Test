@@ -7,8 +7,7 @@ I am sorry for the inconvenience of seeing incomplete software. For that reason 
 
 Here a screenshot of the FFN_Window in action:
 
-![Screenshot 2024-10-05](./Screenshot 2024-10-05.png)
-
+![Screenshot 2024-10-05](https://github.com/MarcTolkmitt/ILGPU-Test/blob/main/Screenshot%202024-10-05.png)
 
 
 ## 1.first thoughts
