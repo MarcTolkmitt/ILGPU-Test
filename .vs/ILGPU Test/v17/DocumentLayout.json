@@ -3,22 +3,25 @@
   "WorkspaceRootPath": "C:\\Users\\marct\\OneDrive\\C# local f\u00FCr GitHub\\ILGPU-Test\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marct\\OneDrive\\C# local f\u00FCr GitHub\\MatrixFFN\\FFN_Window.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marct\\OneDrive\\C# local f\u00FCr GitHub\\MatrixFFN\\Tools\\DataNet.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14E1CDDF-5B82-44C0-8959-F014E52700BE}|ILGPU Test.csproj|c:\\users\\marct\\onedrive\\c# local f\u00FCr github\\ilgpu-test\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{14E1CDDF-5B82-44C0-8959-F014E52700BE}|ILGPU Test.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marct\\AppData\\Local\\Temp\\.vsdbgsrc\\e7879d2ba86c766e1f4c40bb9cafbb0c69826c567e0e1a2a87e43d73b910f958\\XamlReader.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\marct\\OneDrive\\C# local f\u00FCr GitHub\\MatrixFFN\\FFN_Window.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{14E1CDDF-5B82-44C0-8959-F014E52700BE}|ILGPU Test.csproj|c:\\users\\marct\\onedrive\\c# local f\u00FCr github\\ilgpu-test\\ilgpu test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{14E1CDDF-5B82-44C0-8959-F014E52700BE}|ILGPU Test.csproj|solutionrelative:ilgpu test.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{14E1CDDF-5B82-44C0-8959-F014E52700BE}|ILGPU Test.csproj|c:\\users\\marct\\onedrive\\c# local f\u00FCr github\\ilgpu-test\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{14E1CDDF-5B82-44C0-8959-F014E52700BE}|ILGPU Test.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{14E1CDDF-5B82-44C0-8959-F014E52700BE}|ILGPU Test.csproj|c:\\users\\marct\\onedrive\\c# local f\u00FCr github\\ilgpu-test\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{14E1CDDF-5B82-44C0-8959-F014E52700BE}|ILGPU Test.csproj|solutionrelative:mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Marc Tolkmitt\\OneDrive\\C# local f\u00FCr GitHub\\MatrixFFN\\Tools\\CanvasChart.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{14E1CDDF-5B82-44C0-8959-F014E52700BE}|ILGPU Test.csproj|c:\\users\\marct\\onedrive\\c# local f\u00FCr github\\ilgpu-test\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{14E1CDDF-5B82-44C0-8959-F014E52700BE}|ILGPU Test.csproj|solutionrelative:mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{14E1CDDF-5B82-44C0-8959-F014E52700BE}|ILGPU Test.csproj|c:\\users\\marct\\onedrive\\c# local f\u00FCr github\\ilgpu-test\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
@@ -57,19 +60,45 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "DataNet.cs",
+              "DocumentMoniker": "C:\\Users\\marct\\OneDrive\\C# local f\u00FCr GitHub\\MatrixFFN\\Tools\\DataNet.cs",
+              "RelativeDocumentMoniker": "..\\MatrixFFN\\Tools\\DataNet.cs",
+              "ToolTip": "C:\\Users\\marct\\OneDrive\\C# local f\u00FCr GitHub\\MatrixFFN\\Tools\\DataNet.cs",
+              "RelativeToolTip": "..\\MatrixFFN\\Tools\\DataNet.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAAAiwG0AAAAQAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T17:46:46.632Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "XamlReader.cs",
+              "DocumentMoniker": "C:\\Users\\marct\\AppData\\Local\\Temp\\.vsdbgsrc\\e7879d2ba86c766e1f4c40bb9cafbb0c69826c567e0e1a2a87e43d73b910f958\\XamlReader.cs",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\e7879d2ba86c766e1f4c40bb9cafbb0c69826c567e0e1a2a87e43d73b910f958\\XamlReader.cs",
+              "ToolTip": "C:\\Users\\marct\\AppData\\Local\\Temp\\.vsdbgsrc\\e7879d2ba86c766e1f4c40bb9cafbb0c69826c567e0e1a2a87e43d73b910f958\\XamlReader.cs [Schreibgesch\u00FCtzt]",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Local\\Temp\\.vsdbgsrc\\e7879d2ba86c766e1f4c40bb9cafbb0c69826c567e0e1a2a87e43d73b910f958\\XamlReader.cs [Schreibgesch\u00FCtzt]",
+              "ViewState": "AgIAAPABAAAAAAAAAAAEwPIBAABUAAAAAQAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-05T17:42:45.825Z",
+              "EditorCaption": " [Schreibgesch\u00FCtzt]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "FFN_Window.xaml.cs",
               "DocumentMoniker": "C:\\Users\\marct\\OneDrive\\C# local f\u00FCr GitHub\\MatrixFFN\\FFN_Window.xaml.cs",
               "RelativeDocumentMoniker": "..\\MatrixFFN\\FFN_Window.xaml.cs",
               "ToolTip": "C:\\Users\\marct\\OneDrive\\C# local f\u00FCr GitHub\\MatrixFFN\\FFN_Window.xaml.cs",
               "RelativeToolTip": "..\\MatrixFFN\\FFN_Window.xaml.cs",
-              "ViewState": "AgIAAJsCAAAAAAAAAAAnwKoCAAAUAAAAAAAAAA==",
+              "ViewState": "AgIAANkCAAAAAAAAAAAUwPUCAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-05T12:06:11.359Z",
+              "WhenOpened": "2024-10-05T14:55:51.876Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "ILGPU Test.csproj",
               "DocumentMoniker": "C:\\Users\\marct\\OneDrive\\C# local f\u00FCr GitHub\\ILGPU-Test\\ILGPU Test.csproj",
               "RelativeDocumentMoniker": "ILGPU Test.csproj",
@@ -82,7 +111,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "MainWindow.xaml.cs",
               "DocumentMoniker": "C:\\Users\\marct\\OneDrive\\C# local f\u00FCr GitHub\\ILGPU-Test\\MainWindow.xaml.cs",
               "RelativeDocumentMoniker": "MainWindow.xaml.cs",
@@ -95,18 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "CanvasChart.cs",
-              "DocumentMoniker": "C:\\Users\\Marc Tolkmitt\\OneDrive\\C# local f\u00FCr GitHub\\MatrixFFN\\Tools\\CanvasChart.cs",
-              "RelativeDocumentMoniker": "..\\..\\..\\..\\Marc Tolkmitt\\OneDrive\\C# local f\u00FCr GitHub\\MatrixFFN\\Tools\\CanvasChart.cs",
-              "ToolTip": "C:\\Users\\Marc Tolkmitt\\OneDrive\\C# local f\u00FCr GitHub\\MatrixFFN\\Tools\\CanvasChart.cs",
-              "RelativeToolTip": "..\\..\\..\\..\\Marc Tolkmitt\\OneDrive\\C# local f\u00FCr GitHub\\MatrixFFN\\Tools\\CanvasChart.cs",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-04T07:40:40.842Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "README.md",
               "DocumentMoniker": "C:\\Users\\marct\\OneDrive\\C# local f\u00FCr GitHub\\ILGPU-Test\\README.md",
               "RelativeDocumentMoniker": "README.md",
@@ -114,11 +132,12 @@
               "RelativeToolTip": "README.md",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2024-09-13T08:14:33.071Z"
+              "WhenOpened": "2024-09-13T08:14:33.071Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "MainWindow.xaml",
               "DocumentMoniker": "C:\\Users\\marct\\OneDrive\\C# local f\u00FCr GitHub\\ILGPU-Test\\MainWindow.xaml",
               "RelativeDocumentMoniker": "MainWindow.xaml",

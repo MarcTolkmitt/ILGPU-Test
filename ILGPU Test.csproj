@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="helper-NPOIwrap-use-Excel-xlsx" Version="1.0.3" />
+    <PackageReference Include="helper-NPOIwrap-use-Excel-xlsx" Version="1.0.4" />
     <PackageReference Include="ILGPU" Version="1.5.1" />
   </ItemGroup>
 

@@ -442,6 +442,7 @@
             <param name="useHeaders">using a header line of cells?</param>
             <param name="noOfInputs">optional you give it manually</param>
             <param name="noOfOutputs">optional you give it manually</param>
+            <returns>success of operation</returns>
         </member>
         <member name="M:MatrixFFN.FFN.InitLocalData">
             <summary>
