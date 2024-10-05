@@ -39,3 +39,44 @@ C:\Users\Marc Tolkmitt\OneDrive\Desktop\C# Dateien\ILGPU Test\bin\Debug\net8.0-w
 C:\Users\Marc Tolkmitt\OneDrive\Desktop\C# Dateien\ILGPU Test\bin\Debug\net8.0-windows\SixLabors.ImageSharp.dll
 C:\Users\Marc Tolkmitt\OneDrive\Desktop\C# Dateien\ILGPU Test\bin\Debug\net8.0-windows\MatrixFFN.pdb
 C:\Users\Marc Tolkmitt\OneDrive\Desktop\C# Dateien\ILGPU Test\bin\Debug\net8.0-windows\MatrixFFN.xml
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\obj\Debug\net8.0-windows\ILGPU Test.csproj.AssemblyReference.cache
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\obj\Debug\net8.0-windows\MainWindow.g.cs
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\obj\Debug\net8.0-windows\App.g.cs
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\obj\Debug\net8.0-windows\ILGPU Test_MarkupCompile.cache
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\obj\Debug\net8.0-windows\ILGPU Test_MarkupCompile.lref
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\bin\Debug\net8.0-windows\BouncyCastle.Cryptography.dll
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\bin\Debug\net8.0-windows\Enums.NET.dll
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\bin\Debug\net8.0-windows\ExtendedNumerics.BigDecimal.dll
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\bin\Debug\net8.0-windows\NPOIwrap.dll
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\bin\Debug\net8.0-windows\ILGPU.dll
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\bin\Debug\net8.0-windows\MathNet.Numerics.dll
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\bin\Debug\net8.0-windows\Microsoft.IO.RecyclableMemoryStream.dll
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\bin\Debug\net8.0-windows\NPOI.Core.dll
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\bin\Debug\net8.0-windows\NPOI.OOXML.dll
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\bin\Debug\net8.0-windows\NPOI.OpenXml4Net.dll
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\bin\Debug\net8.0-windows\NPOI.OpenXmlFormats.dll
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\bin\Debug\net8.0-windows\ICSharpCode.SharpZipLib.dll
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\bin\Debug\net8.0-windows\SixLabors.Fonts.dll
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\bin\Debug\net8.0-windows\SixLabors.ImageSharp.dll
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\bin\Debug\net8.0-windows\MatrixFFN.dll
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\bin\Debug\net8.0-windows\MatrixFFN.pdb
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\bin\Debug\net8.0-windows\MatrixFFN.xml
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\obj\Debug\net8.0-windows\App.baml
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\obj\Debug\net8.0-windows\MainWindow.baml
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\obj\Debug\net8.0-windows\ILGPU Test.g.resources
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\obj\Debug\net8.0-windows\ILGPU Test.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\obj\Debug\net8.0-windows\ILGPU Test.AssemblyInfoInputs.cache
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\obj\Debug\net8.0-windows\ILGPU Test.AssemblyInfo.cs
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\obj\Debug\net8.0-windows\ILGPU Test.csproj.CoreCompileInputs.cache
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\obj\Debug\net8.0-windows\ILGPU Test.sourcelink.json
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\obj\Debug\net8.0-windows\ILGPU Test.dll
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\obj\Debug\net8.0-windows\refint\ILGPU Test.dll
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\obj\Debug\net8.0-windows\ILGPU Test.pdb
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\bin\Debug\net8.0-windows\ILGPU Test.exe
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\bin\Debug\net8.0-windows\ILGPU Test.deps.json
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\bin\Debug\net8.0-windows\ILGPU Test.runtimeconfig.json
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\bin\Debug\net8.0-windows\ILGPU Test.dll
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\bin\Debug\net8.0-windows\ILGPU Test.pdb
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\obj\Debug\net8.0-windows\ILGPU Test.csproj.Up2Date
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\obj\Debug\net8.0-windows\ILGPU Test.genruntimeconfig.cache
+C:\Users\marct\OneDrive\C# local für GitHub\ILGPU-Test\obj\Debug\net8.0-windows\ref\ILGPU Test.dll

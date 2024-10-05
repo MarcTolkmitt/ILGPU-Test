@@ -1,6 +1,16 @@
 # ILGPU-Test
  Demoprogramm for MatrixFFN and ILGPU
 
+## 0.work in progress
+
+I am sorry for the inconvenience of seeing incomplete software. For that reason you can try the old stable version in .Net 7. You find it in the compressed file  [OldRunningVersion.zip](OldRunningVersion.zip) . 
+
+Here a screenshot of the FFN_Window in action:
+
+![Screenshot 2024-10-05 153026](C:\Users\marct\OneDrive\Bilder\Screenshots\Screenshot 2024-10-05 153026.png)
+
+
+
 ## 1.first thoughts
 
 My longtime interest in artificial neural networks is there from the 90s when i did study computer science with this topic as focus theme. While having tried any tool i could get my hands on ( free/professional ) i was never pleased - regression is still an uncharted area today.
