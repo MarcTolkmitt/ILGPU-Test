@@ -7,7 +7,7 @@ I am sorry for the inconvenience of seeing incomplete software. For that reason 
 
 Here a screenshot of the FFN_Window in action:
 
-![Screenshot 2024-10-05 153026](Screenshot 2024-10-05 153026.png "old german .Net 7 version")
+![](Screenshot 2024-10-05.png "old german .Net 7 version")
 
 
 
