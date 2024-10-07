@@ -9,6 +9,10 @@ using MatrixFFN;
 using System.Threading;
 using NPOI.HPSF;
 using Array = System.Array;
+using NPOIwrap;
+using NPOI.SS.Formula.Functions;
+using System.Linq;
+using System.Windows.Input;
 
 namespace ILGPU_Test
 {
@@ -28,6 +32,7 @@ namespace ILGPU_Test
         public double[ ][ ] outputArray = new double[1][];
         public FFN network = new FFN( new int[] { 1, 2, 1 }, true );
         public FFN_Window networkWindow = new FFN_Window();
+        NPOIexcel myData = new NPOIexcel();
 
         /// <summary>
         /// Constructor of the class
@@ -180,19 +185,6 @@ namespace ILGPU_Test
         }   // end: _MenuQuit_Click
 
         // -------------------------------------------------      Events
-
-        /// <summary>
-        /// Handler function -> MenuItem
-        /// </summary>
-        /// <param name="sender"></param>
-        /// <param name="e"></param>
-        private void _MenuTest_Click( object sender, RoutedEventArgs e )
-        {
-            nummer++;
-            _TextBlock.Text += nummer.ToString() + ": CreateTestData().\n";
-            CreateTestData();
-
-        }   // end: _MenuTest_Click
 
         /// <summary>
         /// Handler function -> MenuItem
@@ -436,6 +428,45 @@ namespace ILGPU_Test
             }   //
 
         }   // end: _FFNlearnLoop_Click
+
+        /// <summary>
+        /// Handler function -> _MenuDPparableCreate_Click
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void _MenuDPparableCreate_Click( object sender, RoutedEventArgs e )
+        {
+            nummer++;
+            _TextBlock.Text += nummer.ToString() + ": CreateTestData().\n";
+            CreateTestData();
+
+        }   // end: _MenuDPparableCreate_Click
+
+        /// <summary>
+        /// Handler function -> MenuItem
+        /// </summary>
+        /// <param name="sender"></param>
+        /// <param name="e"></param>
+        private void _MenuDPparableWrite_Click( object sender, RoutedEventArgs e )
+        {
+            //string fileName = "";
+            double[][] doubles = new double[ 21 ][];
+            for ( int i = 0; i < doubles.Length; i++ )
+                doubles[ i ] = inputArray[ i ].Concat(outputArray[ i ] ).ToArray();
+
+            DisplayText( $"input.Length: {inputArray.Length}" +
+                $" output.Length: {outputArray.Length}" +
+                $" doubles.Length: {doubles.Length}");
+            DisplayText( $"input[0].Length: {inputArray[ 0 ].Length}" +
+                $" output[0].Length: {outputArray[ 0 ].Length}" +
+                $" doubles[0].Length: {doubles[ 0 ].Length}" );
+            
+            myData.CreateWorkbook();    // start empty
+            myData.ArrayJaggedToDataListDouble( doubles );  // you give him your data
+            myData.CreateSheetFromListDouble( 0 );  // this adds the data now to the workbook
+            myData.SaveWorkbook(  );	// this will save the file in real excel format thanks to NPOI
+            
+        }
 
     }   // end: partial class MainWindow
 

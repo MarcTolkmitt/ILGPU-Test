@@ -51,7 +51,7 @@
             },
             "helper-NPOIwrap-use-Excel-xlsx": {
               "target": "Package",
-              "version": "[1.0.6, )"
+              "version": "[1.0.4, )"
             }
           },
           "imports": [

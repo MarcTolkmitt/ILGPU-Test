@@ -11,8 +11,12 @@
             <MenuItem Header="File">
                 <MenuItem Header="Quit" Click="_MenuQuit_Click"/>
             </MenuItem>
-            <MenuItem x:Name="_MenuTestData" Header="Test data parable" 
-                      Click="_MenuTest_Click"/>
+            <MenuItem x:Name="_Data" Header="Data Preparation">
+                <MenuItem x:Name="_MenuDPparableCreate" Header="Test data parable" 
+                      Click="_MenuDPparableCreate_Click"/>
+                <MenuItem x:Name="_MenuDPparableWrite" Header="Write parable to excel file"
+                    Click="_MenuDPparableWrite_Click"/>
+            </MenuItem>
             <MenuItem Header="FFN">
                 <MenuItem x:Name="_MenuFFNload" Header="Load" Click="_FFNload_Click"/>
                 <MenuItem x:Name="_MenuFFNloadOf" Header="Load of ..." 
