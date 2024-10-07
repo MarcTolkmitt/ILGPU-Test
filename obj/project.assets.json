@@ -41,7 +41,7 @@
           }
         }
       },
-      "helper-NPOIwrap-use-Excel-xlsx/1.0.6": {
+      "helper-NPOIwrap-use-Excel-xlsx/1.0.7": {
         "type": "package",
         "dependencies": {
           "NPOI": "2.7.1"
@@ -533,15 +533,15 @@
         "lib/netstandard2.1/ExtendedNumerics.BigDecimal.xml"
       ]
     },
-    "helper-NPOIwrap-use-Excel-xlsx/1.0.6": {
-      "sha512": "YMu1+WJG5e8kpgmJV3XoOueoqaZGH5nis19+LA7CLIG+kbliYqgZcb18QQLD16I6Zvzp5w+WtnNvkpt/krpU6Q==",
+    "helper-NPOIwrap-use-Excel-xlsx/1.0.7": {
+      "sha512": "8KbZcZbO9Szn6j7MKUUw1KQ+b1aIWkwiOJXZBPSGNdQQdk/rmy0r02RlhtxPQmfE/pJhAOgQHhgiXSoQ9Oc4NA==",
       "type": "package",
-      "path": "helper-npoiwrap-use-excel-xlsx/1.0.6",
+      "path": "helper-npoiwrap-use-excel-xlsx/1.0.7",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
         "README.md",
-        "helper-npoiwrap-use-excel-xlsx.1.0.6.nupkg.sha512",
+        "helper-npoiwrap-use-excel-xlsx.1.0.7.nupkg.sha512",
         "helper-npoiwrap-use-excel-xlsx.nuspec",
         "lib/net8.0-windows7.0/NPOIwrap.dll"
       ]
@@ -1125,7 +1125,7 @@
   "projectFileDependencyGroups": {
     "net8.0-windows7.0": [
       "ILGPU >= 1.5.1",
-      "helper-NPOIwrap-use-Excel-xlsx >= 1.0.6"
+      "helper-NPOIwrap-use-Excel-xlsx >= 1.0.7"
     ]
   },
   "packageFolders": {
@@ -1134,11 +1134,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Marc Tolkmitt\\OneDrive\\Desktop\\C# Dateien\\ILGPU Test\\ILGPU Test.csproj",
+      "projectUniqueName": "C:\\Users\\Marc Tolkmitt\\OneDrive\\C# local für GitHub\\ILGPU-Test\\ILGPU Test.csproj",
       "projectName": "ILGPU Test",
-      "projectPath": "C:\\Users\\Marc Tolkmitt\\OneDrive\\Desktop\\C# Dateien\\ILGPU Test\\ILGPU Test.csproj",
+      "projectPath": "C:\\Users\\Marc Tolkmitt\\OneDrive\\C# local für GitHub\\ILGPU-Test\\ILGPU Test.csproj",
       "packagesPath": "C:\\Users\\Marc Tolkmitt\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Marc Tolkmitt\\OneDrive\\Desktop\\C# Dateien\\ILGPU Test\\obj\\",
+      "outputPath": "C:\\Users\\Marc Tolkmitt\\OneDrive\\C# local für GitHub\\ILGPU-Test\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Marc Tolkmitt\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1178,7 +1178,7 @@
           },
           "helper-NPOIwrap-use-Excel-xlsx": {
             "target": "Package",
-            "version": "[1.0.6, )"
+            "version": "[1.0.7, )"
           }
         },
         "imports": [

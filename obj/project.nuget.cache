@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "R943+d8Vebc=",
+  "dgSpecHash": "pmSUX+Ov/wU=",
   "success": true,
-  "projectFilePath": "C:\\Users\\Marc Tolkmitt\\OneDrive\\Desktop\\C# Dateien\\ILGPU Test\\ILGPU Test.csproj",
+  "projectFilePath": "C:\\Users\\Marc Tolkmitt\\OneDrive\\C# local für GitHub\\ILGPU-Test\\ILGPU Test.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Marc Tolkmitt\\.nuget\\packages\\bouncycastle.cryptography\\2.3.1\\bouncycastle.cryptography.2.3.1.nupkg.sha512",
     "C:\\Users\\Marc Tolkmitt\\.nuget\\packages\\enums.net\\4.0.1\\enums.net.4.0.1.nupkg.sha512",
     "C:\\Users\\Marc Tolkmitt\\.nuget\\packages\\extendednumerics.bigdecimal\\2025.1001.2.129\\extendednumerics.bigdecimal.2025.1001.2.129.nupkg.sha512",
-    "C:\\Users\\Marc Tolkmitt\\.nuget\\packages\\helper-npoiwrap-use-excel-xlsx\\1.0.6\\helper-npoiwrap-use-excel-xlsx.1.0.6.nupkg.sha512",
+    "C:\\Users\\Marc Tolkmitt\\.nuget\\packages\\helper-npoiwrap-use-excel-xlsx\\1.0.7\\helper-npoiwrap-use-excel-xlsx.1.0.7.nupkg.sha512",
     "C:\\Users\\Marc Tolkmitt\\.nuget\\packages\\ilgpu\\1.5.1\\ilgpu.1.5.1.nupkg.sha512",
     "C:\\Users\\Marc Tolkmitt\\.nuget\\packages\\mathnet.numerics.signed\\5.0.0\\mathnet.numerics.signed.5.0.0.nupkg.sha512",
     "C:\\Users\\Marc Tolkmitt\\.nuget\\packages\\microsoft.io.recyclablememorystream\\3.0.0\\microsoft.io.recyclablememorystream.3.0.0.nupkg.sha512",

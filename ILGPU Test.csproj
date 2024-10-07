@@ -10,14 +10,15 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="helper-NPOIwrap-use-Excel-xlsx" Version="1.0.6" />
+    <PackageReference Include="helper-NPOIwrap-use-Excel-xlsx" Version="1.0.7" />
     <PackageReference Include="ILGPU" Version="1.5.1" />
   </ItemGroup>
 
   <ItemGroup>
     <Reference Include="MatrixFFN">
-      <HintPath>..\..\..\C# local für GitHub\MatrixFFN\bin\Debug\net8.0-windows7.0\MatrixFFN.dll</HintPath>
+      <HintPath>..\MatrixFFN\bin\Debug\net8.0-windows7.0\MatrixFFN.dll</HintPath>
     </Reference>
   </ItemGroup>
+
 
 </Project>

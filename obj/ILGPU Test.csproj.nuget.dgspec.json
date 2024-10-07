@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Marc Tolkmitt\\OneDrive\\Desktop\\C# Dateien\\ILGPU Test\\ILGPU Test.csproj": {}
+    "C:\\Users\\Marc Tolkmitt\\OneDrive\\C# local für GitHub\\ILGPU-Test\\ILGPU Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Marc Tolkmitt\\OneDrive\\Desktop\\C# Dateien\\ILGPU Test\\ILGPU Test.csproj": {
+    "C:\\Users\\Marc Tolkmitt\\OneDrive\\C# local für GitHub\\ILGPU-Test\\ILGPU Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Marc Tolkmitt\\OneDrive\\Desktop\\C# Dateien\\ILGPU Test\\ILGPU Test.csproj",
+        "projectUniqueName": "C:\\Users\\Marc Tolkmitt\\OneDrive\\C# local für GitHub\\ILGPU-Test\\ILGPU Test.csproj",
         "projectName": "ILGPU Test",
-        "projectPath": "C:\\Users\\Marc Tolkmitt\\OneDrive\\Desktop\\C# Dateien\\ILGPU Test\\ILGPU Test.csproj",
+        "projectPath": "C:\\Users\\Marc Tolkmitt\\OneDrive\\C# local für GitHub\\ILGPU-Test\\ILGPU Test.csproj",
         "packagesPath": "C:\\Users\\Marc Tolkmitt\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Marc Tolkmitt\\OneDrive\\Desktop\\C# Dateien\\ILGPU Test\\obj\\",
+        "outputPath": "C:\\Users\\Marc Tolkmitt\\OneDrive\\C# local für GitHub\\ILGPU-Test\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Marc Tolkmitt\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -51,7 +51,7 @@
             },
             "helper-NPOIwrap-use-Excel-xlsx": {
               "target": "Package",
-              "version": "[1.0.6, )"
+              "version": "[1.0.7, )"
             }
           },
           "imports": [
