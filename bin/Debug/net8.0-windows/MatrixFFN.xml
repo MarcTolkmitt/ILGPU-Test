@@ -1296,18 +1296,18 @@
             local result of a 'Predict'
             </summary>
         </member>
-        <member name="F:MatrixFFN.FFN_Window.canvasChartValues">
+        <member name="F:MatrixFFN.FFN_Window.canvasChartWindow_Values">
             <summary>
             Chart for the function's and the 
             predict's values.
             </summary>
         </member>
-        <member name="F:MatrixFFN.FFN_Window.canvasChartErrors">
+        <member name="F:MatrixFFN.FFN_Window.canvasChartWindow_Errors">
             <summary>
             Chart for the error values.
             </summary>
         </member>
-        <member name="F:MatrixFFN.FFN_Window.canvasTopicNetLayers">
+        <member name="F:MatrixFFN.FFN_Window.canvasTopicWindow_NetLayers">
             <summary>
             Showing the network's design ( layers structure )
             </summary>
@@ -1477,6 +1477,13 @@
             <param name="sender"></param>
             <param name="e"></param>
         </member>
+        <member name="M:MatrixFFN.FFN_Window._ButtonDatasetLoad_Click(System.Object,System.Windows.RoutedEventArgs)">
+            <summary>
+            Event handler: _ButtonDatasetLoad_Click
+            </summary>
+            <param name="sender"></param>
+            <param name="e"></param>
+        </member>
         <member name="M:MatrixFFN.FFN_Window._CanvasNetLayers_MouseDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
             <summary>
             Try to get a double-click ( tricky input pattern )
@@ -1508,13 +1515,6 @@
         <member name="M:MatrixFFN.FFN_Window._ButtonPredict_Click(System.Object,System.Windows.RoutedEventArgs)">
             <summary>
             Event handler: _ButtonPredict_Click
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:MatrixFFN.FFN_Window._ButtonDatasetLoad_Click(System.Object,System.Windows.RoutedEventArgs)">
-            <summary>
-            Event handler: _ButtonDatasetLoad_Click
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
@@ -1915,7 +1915,7 @@
         <member name="F:MatrixFFN.Tools.CanvasTopic.version">
             <summary>
             created on: 08.07.2023
-            <para>last edit: 05.10.24</para>
+            <para>last edit: 07.10.24</para>
             </summary>
         </member>
         <member name="F:MatrixFFN.Tools.CanvasTopic.basicTopic">
@@ -2004,31 +2004,6 @@
             <param name="height">standard if not changed</param>
             <param name="width">standard if not changed</param>
         </member>
-        <member name="M:MatrixFFN.Tools.CanvasTopic.ParseTopic(System.String,System.Int32[]@)">
-            <summary>
-            Parses the int[] of the layers from
-            a string representation.
-            </summary>
-            <param name="topic">the topic string</param>
-            <param name="layerInts">reference to a int[] for the layers</param>
-            <returns>success of the operation</returns>
-        </member>
-        <member name="M:MatrixFFN.Tools.CanvasTopic.ParseDataIntoTopic(System.Double[][],System.Double[][])">
-            <summary>
-            The given dataset defines the input-output layers.
-            </summary>
-            <param name="dataIn"></param>
-            <param name="dataOut"></param>
-            <returns></returns>
-        </member>
-        <member name="M:MatrixFFN.Tools.CanvasTopic.ParseLocalDataIntoTopic(System.Int32,System.Int32)">
-            <summary>
-            The given dataset defines the input-output layers.
-            </summary>
-            <param name="dataIn"></param>
-            <param name="dataOut"></param>
-            <returns></returns>
-        </member>
         <member name="M:MatrixFFN.Tools.CanvasTopic.PutCanvasWindowLine(System.Double,System.Double,System.Double,System.Double,System.Int32,System.Windows.Media.Brush)">
             <summary>
             Helper function putting a line into
@@ -2080,6 +2055,31 @@
             </summary>
             <param name="sender"></param>
             <param name="e"></param>
+        </member>
+        <member name="M:MatrixFFN.Tools.CanvasTopic.ParseTopic(System.String,System.Int32[]@)">
+            <summary>
+            Parses the int[] of the layers from
+            a string representation.
+            </summary>
+            <param name="topic">the topic string</param>
+            <param name="layerInts">reference to a int[] for the layers</param>
+            <returns>success of the operation</returns>
+        </member>
+        <member name="M:MatrixFFN.Tools.CanvasTopic.ParseDataIntoTopic(System.Double[][],System.Double[][])">
+            <summary>
+            The given dataset defines the input-output layers.
+            </summary>
+            <param name="dataIn"></param>
+            <param name="dataOut"></param>
+            <returns></returns>
+        </member>
+        <member name="M:MatrixFFN.Tools.CanvasTopic.ParseLocalDataIntoTopic(System.Int32,System.Int32)">
+            <summary>
+            The given dataset defines the input-output layers.
+            </summary>
+            <param name="dataIn"></param>
+            <param name="dataOut"></param>
+            <returns></returns>
         </member>
         <member name="T:MatrixFFN.Tools.CanvasWindow">
             <summary>
