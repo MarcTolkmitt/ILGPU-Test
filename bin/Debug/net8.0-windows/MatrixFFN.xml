@@ -889,368 +889,6 @@
             and 'Train_LocalData' can benefit from it.
             </summary>
         </member>
-        <member name="T:MatrixFFN.FFN_ILGPU_Window">
-            <summary>
-            Interaction logic for FFN_ILGPU_Window.xaml
-            </summary>
-            <summary>
-            FFN_ILGPU_Window
-            </summary>
-        </member>
-        <member name="F:MatrixFFN.FFN_ILGPU_Window.version">
-            <summary>
-            created on: 01.10.2024
-            last edit: 05.10.24
-            </summary>
-        </member>
-        <member name="F:MatrixFFN.FFN_ILGPU_Window.network">
-            <summary>
-            local FFN_ILGPU
-            </summary>
-        </member>
-        <member name="F:MatrixFFN.FFN_ILGPU_Window.inputArrayField">
-            <summary>
-            Input data for the network.
-            </summary>
-        </member>
-        <member name="F:MatrixFFN.FFN_ILGPU_Window.outputArrayField">
-            <summary>
-            Output data for the network.
-            </summary>
-        </member>
-        <member name="F:MatrixFFN.FFN_ILGPU_Window.xValues">
-            <summary>
-            localised X-Values for the chart ( moving the 'inputArrayField' 
-            to the right position in the chart )
-            </summary>
-        </member>
-        <member name="F:MatrixFFN.FFN_ILGPU_Window.yValues">
-            <summary>
-            localised Y-Values for the chart ( part of 'outputArrayField' )
-            </summary>
-        </member>
-        <member name="F:MatrixFFN.FFN_ILGPU_Window.predictValues">
-            <summary>
-            local result of a 'Predict'
-            </summary>
-        </member>
-        <member name="F:MatrixFFN.FFN_ILGPU_Window.canvasChartValues">
-            <summary>
-            Chart for the function's and the 
-            predict's values.
-            </summary>
-        </member>
-        <member name="F:MatrixFFN.FFN_ILGPU_Window.canvasChartErrors">
-            <summary>
-            Chart for the error values.
-            </summary>
-        </member>
-        <member name="F:MatrixFFN.FFN_ILGPU_Window.canvasTopicNetLayers">
-            <summary>
-            Showing the network's design ( layers structure )
-            </summary>
-        </member>
-        <member name="F:MatrixFFN.FFN_ILGPU_Window.isNowToEnd">
-            <summary>
-            Flag to close the window for real and not just to hide it
-            any more.
-            </summary>
-        </member>
-        <member name="F:MatrixFFN.FFN_ILGPU_Window.isAutomatic">
-            <summary>
-            Flag for the automatic training ( stop is 0, pause is 1, auto is 2 ). 
-            </summary>
-        </member>
-        <member name="F:MatrixFFN.FFN_ILGPU_Window.automaticLoopThread">
-            <summary>
-            the Thread for the calculation
-            </summary>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window.#ctor">
-            <summary>
-            Constructor to init all the components ( UI ).
-            </summary>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window.GetDirectory">
-            <summary>
-            Delivers the working directory with the systems separator
-            symbol.
-            </summary>
-            <returns>working directory...</returns>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window.SetLabelFileName">
-            <summary>
-            Puts the correct filename into the label.
-            </summary>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window.SetTextBoxNetLayers(System.String)">
-            <summary>
-            Puts the text into the 'TextBox' for typing
-            in the network's topic.
-            </summary>
-            <param name="text">wanted text</param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window.ArrayToString(System.Double[][],System.Boolean)">
-            <summary>
-            Helper function converting an array field to string.
-            </summary>
-            <param name="dataField">the data set</param>
-            <param name="linebreak">newline after every array ?</param>
-            <returns>the stringrepresentation</returns>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window.ShowText(System.String)">
-            <summary>
-            Helper function serving the 'text' to the 'TextBox'.
-            Mostly used for the 'Fit'-string.
-            </summary>
-            <param name="text">the message</param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window.ShowPredict(System.String,System.Double[])">
-            <summary>
-            Shows the two lines in the chart windows. Usually done
-            after 'Predict' ( called from it ).
-            </summary>
-            <param name="titleText">the special header</param>
-            <param name="predictArray">results of the predict for the chosen input/output nodes</param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window.SetStatusText(System.String)">
-            <summary>
-            Helper function for the text ion the statusbar.
-            </summary>
-            <param name="neuerText">the new text</param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window.SetStatusProgress(System.Int32)">
-            <summary>
-            Helper function for the percentage of the progress bar.
-            </summary>
-            <param name="percent">percentage</param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window.SetStatusCheckStart(System.String)">
-            <summary>
-            The color 'red' for the 'CheckBox' status bar and
-            the message text in it. Start means he is no longer idle ( 'green' ).
-            </summary>
-            <param name="text">text in the status bar</param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window.SetStatusCheckDone(System.String)">
-            <summary>
-            The color 'green' for the 'CheckBox' status bar and
-            the message text in it. Done means he is now idle ( not 'red' ).
-            </summary>
-            <param name="text">text in the status bar</param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window.SetStatusWorking(System.String,System.Int32)">
-            <summary>
-            The at work color 'orange' for the 'CheckBox' status bar and
-            the message text in it. The percentage for the progress.
-            </summary>
-            <param name="text">text in the status bar</param>
-            <param name="percent">percentage of the progress</param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window.GetStatusDatasetCheck">
-            <summary>
-            For the openess the choice of data source has to
-            be cared for.
-            </summary>
-            <returns>0 is no choice, 1 is internal, 2 is loaded</returns>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window.AutomaticLoop">
-            <summary>
-            Threadable function for the automatic training. The thread 
-            is nice in .Net-ways -
-            finishing every action in its window. Being hold on priority settings.
-            </summary>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window._Window_Closing(System.Object,System.ComponentModel.CancelEventArgs)">
-            <summary>
-            Event handler for the closing of the window.
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window._ButtonLoad_Click(System.Object,System.Windows.RoutedEventArgs)">
-            <summary>
-            Event handler: _ButtonLoad_Click
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window._ButtonLoadOf_Click(System.Object,System.Windows.RoutedEventArgs)">
-            <summary>
-            Event handler: _ButtonLoadOf_Click
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window._ButtonSave_Click(System.Object,System.Windows.RoutedEventArgs)">
-            <summary>
-            Event handler: _ButtonSave_Click
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window._ButtonSaveAs_Click(System.Object,System.Windows.RoutedEventArgs)">
-            <summary>
-            Event handler: _ButtonSaveAs_Click
-            </summary>
-            <param name="sender">Quelle</param>
-            <param name="e">Quellparameter</param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window._TextBoxNetLayers_TextChanged(System.Object,System.Windows.Controls.TextChangedEventArgs)">
-            <summary>
-            Event handler: Textänderung in der TextBox
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window._ButtonDatasetParabel_Click(System.Object,System.Windows.RoutedEventArgs)">
-            <summary>
-            Event handler: _ButtonDatasetParabel_Click
-            </summary>
-            <param name="sender">Quelle</param>
-            <param name="e">Quellparameter</param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window._CanvasNetLayers_MouseDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
-            <summary>
-            Try to get a double-click ( tricky input pattern )
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window._CanvasValues_MouseDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
-            <summary>
-            Try to get a double-click ( tricky input pattern )
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window._CanvasErrors_MouseDown(System.Object,System.Windows.Input.MouseButtonEventArgs)">
-            <summary>
-            Try to get a double-click ( tricky input pattern )
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window._ButtonInit_Click(System.Object,System.Windows.RoutedEventArgs)">
-            <summary>
-            Event handler: _ButtonInit_Click
-            </summary>
-            <param name="sender"></param>
-            <param name="e"></param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window._ButtonPredict_Click(System.Object,System.Windows.RoutedEventArgs)">
-            <summary>
-            Event handler: _ButtonPredict_Click
-            </summary>
-            <param name="sender">Quelle</param>
-            <param name="e">Quellparameter</param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window._ButtonDatasetLoad_Click(System.Object,System.Windows.RoutedEventArgs)">
-            <summary>
-            Event handler: _ButtonDatasetLoad_Click
-            </summary>
-            <param name="sender">Quelle</param>
-            <param name="e">Quellparameter</param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window._datasetCheckParabel_Click(System.Object,System.Windows.RoutedEventArgs)">
-            <summary>
-            Event handler: _datasetCheckParabel_Click
-            </summary>
-            <param name="sender">Quelle</param>
-            <param name="e">Quellparameter</param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window._datasetCheckLoad_Click(System.Object,System.Windows.RoutedEventArgs)">
-            <summary>
-            Event handler: _datasetCheckLoad_Click
-            </summary>
-            <param name="sender">Quelle</param>
-            <param name="e">Quellparameter</param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window._TextBoxInputEpochs_PreviewTextInput(System.Object,System.Windows.Input.TextCompositionEventArgs)">
-            <summary>
-            Event handler: _TextBoxInputEpochs_PreviewTextInput
-            <para>textinput from any source works via the preview-versions</para>
-            </summary>
-            <param name="sender">Quelle</param>
-            <param name="e">Quellparameter</param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window._ButtonAutomaticTraining_Click(System.Object,System.Windows.RoutedEventArgs)">
-            <summary>
-            Event handler: _ButtonAutomaticTraining_Click
-            </summary>
-            <param name="sender">Quelle</param>
-            <param name="e">Quellparameter</param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window._TextBoxNoInput_PreviewTextInput(System.Object,System.Windows.Input.TextCompositionEventArgs)">
-            <summary>
-            Event handler: _TextBoxNoInput_PreviewTextInput
-            </summary>
-            <param name="sender">Quelle</param>
-            <param name="e">Quellparameter</param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window._ShowLikeCheck_Checked(System.Object,System.Windows.RoutedEventArgs)">
-            <summary>
-            Event handler: _ShowLikeCheck_Checked
-            </summary>
-            <param name="sender">Quelle</param>
-            <param name="e">Quellparameter</param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window._ButtonTrain_Click(System.Object,System.Windows.RoutedEventArgs)">
-            <summary>
-            Event handler: _ButtonTrain_Click
-            </summary>
-            <param name="sender">Quelle</param>
-            <param name="e">Quellparameter</param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window._ButtonAutomaticTrainingPause_Click(System.Object,System.Windows.RoutedEventArgs)">
-            <summary>
-            Event handler: _ButtonAutomaticTrainingPause_Click
-            </summary>
-            <param name="sender">Quelle</param>
-            <param name="e">Quellparameter</param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window._ButtonAutomaticTrainingStop_Click(System.Object,System.Windows.RoutedEventArgs)">
-            <summary>
-            Event handler: _ButtonAutomaticTrainingStop_Click
-            </summary>
-            <param name="sender">Quelle</param>
-            <param name="e">Quellparameter</param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window._TextBoxShowIn_PreviewTextInput(System.Object,System.Windows.Input.TextCompositionEventArgs)">
-            <summary>
-            Event handler: _TextBoxShowIn_PreviewTextInput
-            <para>textinput from any source works via the preview-versions</para>
-            </summary>
-            <param name="sender">Quelle</param>
-            <param name="e">Quellparameter</param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window._TextBoxShowOut_PreviewTextInput(System.Object,System.Windows.Input.TextCompositionEventArgs)">
-            <summary>
-            Event handler: _TextBoxShowOut_PreviewTextInput
-            <para>textinput from any source works via the preview-versions</para>
-            </summary>
-            <param name="sender">Quelle</param>
-            <param name="e">Quellparameter</param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window._TextBoxShowIn_TextChanged(System.Object,System.Windows.Controls.TextChangedEventArgs)">
-            <summary>
-            Event handler: _TextBoxShowIn_TextChanged
-            </summary>
-            <param name="sender">Quelle</param>
-            <param name="e">Quellparameter</param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window._TextBoxShowOut_TextChanged(System.Object,System.Windows.Controls.TextChangedEventArgs)">
-            <summary>
-            Event handler: _TextBoxShowOut_TextChanged
-            </summary>
-            <param name="sender">Quelle</param>
-            <param name="e">Quellparameter</param>
-        </member>
-        <member name="M:MatrixFFN.FFN_ILGPU_Window.InitializeComponent">
-            <summary>
-            InitializeComponent
-            </summary>
-        </member>
         <member name="T:MatrixFFN.FFN_Window">
             <summary>
             Interaction logic for FFN_Window.xaml
@@ -1323,19 +961,24 @@
             Flag for the automatic training ( stop is 0, pause is 1, auto is 2 ). 
             </summary>
         </member>
-        <member name="F:MatrixFFN.FFN_Window.automaticLoopThread">
-            <summary>
-            the Thread for the calculation
-            </summary>
-        </member>
         <member name="F:MatrixFFN.FFN_Window.workingDirectory">
             <summary>
             the working directory
             </summary>
         </member>
+        <member name="F:MatrixFFN.FFN_Window.autoLoopTimer">
+            <summary>
+            timer for the automatic loop
+            </summary>
+        </member>
         <member name="M:MatrixFFN.FFN_Window.#ctor">
             <summary>
             Constructor to init all the components ( UI ).
+            </summary>
+        </member>
+        <member name="M:MatrixFFN.FFN_Window.Dispose">
+            <summary>
+            Timer needs to be disposed manually.
             </summary>
         </member>
         <member name="M:MatrixFFN.FFN_Window.GetDirectory">
@@ -1421,7 +1064,7 @@
             </summary>
             <returns>0 is no choice, 1 is internal, 2 is loaded</returns>
         </member>
-        <member name="M:MatrixFFN.FFN_Window.AutomaticLoop">
+        <member name="M:MatrixFFN.FFN_Window.AutomaticLoop(System.Object,System.Timers.ElapsedEventArgs)">
             <summary>
             Thread able function for the automatic training. The thread 
             is nice in .Net-ways -
@@ -1915,7 +1558,7 @@
         <member name="F:MatrixFFN.Tools.CanvasTopic.version">
             <summary>
             created on: 08.07.2023
-            <para>last edit: 07.10.24</para>
+            <para>last edit: 08.10.24</para>
             </summary>
         </member>
         <member name="F:MatrixFFN.Tools.CanvasTopic.basicTopic">
@@ -3539,6 +3182,12 @@
             A traditional load routine ( binary ).
             </summary>
             <param name="reader">given 'BinaryReader'</param>
+        </member>
+        <member name="T:MatrixFFN.Tools.Message">
+            <summary>
+            Shortcut for 'MessageBox'.
+            No instance no fuss.
+            </summary>
         </member>
         <member name="M:MatrixFFN.Tools.Message.Show(System.String)">
             <summary>
