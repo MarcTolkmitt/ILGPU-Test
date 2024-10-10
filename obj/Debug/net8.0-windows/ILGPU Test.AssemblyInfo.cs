@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ILGPU Test")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+ef45c75de4932fc437812ff6f399d7b51e7be56e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9c22959abd774046a3b1b0517de6be3b39e091e7")]
 [assembly: System.Reflection.AssemblyProductAttribute("ILGPU Test")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ILGPU Test")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
