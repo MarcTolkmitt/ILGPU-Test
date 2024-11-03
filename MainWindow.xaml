@@ -54,8 +54,8 @@
                       Margin="10">
             <TextBlock x:Name="_TextBlock" TextWrapping="Wrap" HorizontalAlignment="Left" 
                        Margin="10"/>
-
         </ScrollViewer>
 
     </DockPanel>
+
 </Window>

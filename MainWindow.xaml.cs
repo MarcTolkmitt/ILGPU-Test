@@ -13,6 +13,7 @@ using NPOIwrap;
 using NPOI.SS.Formula.Functions;
 using System.Linq;
 using System.Windows.Input;
+using System.Windows.Media;
 
 namespace ILGPU_Test
 {
@@ -464,9 +465,9 @@ namespace ILGPU_Test
             myData.CreateWorkbook();    // start empty
             myData.ArrayJaggedToDataListDouble( doubles );  // you give him your data
             myData.CreateSheetFromListDouble( 0 );  // this adds the data now to the workbook
-            myData.SaveWorkbook(  );	// this will save the file in real excel format thanks to NPOI
-            
-        }
+            myData.SaveWorkbook(  );    // this will save the file in real excel format thanks to NPOI
+
+        }   // end: _MenuDPparableWrite_Click
 
     }   // end: partial class MainWindow
 

@@ -38,3 +38,9 @@ Coming to the truth the whole weight lies on the **<u>Falk-scheme</u>** to multi
 
 Now you understand why i could publish something on GitHub while you could possibly earn money with it.
 
+## <u>5. affiliate links</u>
+
+New and affordable, BTCMiner a service in the cloud: 
+
+#### https://www.btcminer.vip/21663039
+
